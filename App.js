@@ -1,13 +1,15 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 
 // replicate html structure using React
-{/* <div id ="parent">
+/* <div id ="parent">
     <div id ="child">
         <h1>Hello, World! from React</h1>
         <p>This is a paragraph.</p>
     </div>
-</div> */}
-// 
-
+</div> */
+// This code creates a simple React component structure that replicates the HTML structure provided in the comment above.
 const parent = React.createElement('div', { id: 'parent' }, 
     React.createElement('div', { id: 'child' },
         [
