@@ -1,12 +1,12 @@
 import { ButtonComponent } from './Body';
 import { Login } from '@mui/icons-material';
-import { Logout } from '@mui/icons-material';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-const Header = () => {
-    const[btnText, setBtnText] = useState("Login");
 
-    const btnClickHandler = () => {
+const Header: React.FC = () => {
+    const[btnText, setBtnText] = useState<string>("Login");
+
+    const btnClickHandler = (): void => {
         btnText === "Login" ? setBtnText("Logout") : setBtnText("Login");
     }
 
@@ -23,7 +23,11 @@ const Header = () => {
                 </ul>
             </div>
             <div className='login-container'>
-                {ButtonComponent(btnText, <Login />, btnClickHandler)}
+                <ButtonComponent
+                    text={btnText}
+                    icon={<Login />}
+                    onClick={btnClickHandler}
+                />
             </div>
         </div>
     )

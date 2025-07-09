@@ -1,6 +1,21 @@
 import img1 from '../../assets/img1.jpg';
 
-export const restaurantData = [
+export interface Restaurant {
+    id: number;
+    name: string;
+    description: string;
+    specialItem: string;
+    rating: number;
+    reviews: number;
+    cuisine: string;
+    priceRange: string;
+    deliveryTime: string;
+    location: string;
+    isVeg: boolean;
+    imgSrc: string;
+}
+
+export const restaurantData: Restaurant[] = [
     {
         id: 1,
         name: "The Golden Spoon",
@@ -144,4 +159,4 @@ export const restaurantData = [
 ];
 
 // Export the old name for backward compatibility
-export const dummyData = restaurantData;
+export const dummyData: Restaurant[] = restaurantData;
