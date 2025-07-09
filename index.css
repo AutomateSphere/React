@@ -2,3 +2,74 @@
     color: blue;
     font-size: 24px;
 }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+
+
+.nav-items > ul {
+    display: flex;
+    font-size: 20px;
+    list-style-type: none ;
+}
+
+.nav-items > ul > li {
+    padding: 10p;
+    margin: 10px;
+}
+
+.search-container {
+    align-items: center;
+    padding: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    background-color: #f0e3e3;
+    width: 200px;
+    height: 300px;
+}
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shimmer-card {
+    width: 200px;
+    height: 300px;
+    margin: 16px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    animation: shimmer 1.5s infinite linear;
+}
+
+.notiification-bar {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.filter-container {
+    padding: 10px;
+}

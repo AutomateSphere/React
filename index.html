@@ -4,29 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css"> 
+    <link rel="stylesheet" href="./index.css">
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Checkout</title>
 </head>
 <body>
-    <h1> hello above root elemt</h1>
-    <div id="root">
-        <p>Hello, World! from HTML!</p>
-    </div>
-    <h1> hello below root elemt</h1>
+    <div id="root"></div>
 
-    <script>
-        const heading = document.createElement('h1');
-        heading.innerHTML = 'Hello, World! from JavaScript!';
-        document.getElementById('root').appendChild(heading);
-    </script>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-    <script>
-        const heading2 = React.createElement('h2', null, 'Hello, World! from React!');
-        ReactDOM.render(heading2, document.getElementById('root'));
-    </script>
-
-
-    <script type="module" src ='./App.js'></script>
+    <script type="module" src ='./src/App.js'></script>
 </body>
 </html>
