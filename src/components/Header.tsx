@@ -1,6 +1,7 @@
 import { ButtonComponent } from './Body';
 import { Login } from '@mui/icons-material';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Header: React.FC = () => {
@@ -17,9 +18,9 @@ const Header: React.FC = () => {
             </div>
             <div className='nav-items'>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/about'>About</Link></li>
+                    <li><Link to='/contact'>Contact</Link></li>
                 </ul>
             </div>
             <div className='login-container'>

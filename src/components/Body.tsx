@@ -29,6 +29,15 @@ const Body: React.FC = () => {
     const [searchText, setSearchText] = useState<string>("");
 
     useEffect(() => {
+        console.log("no dependancy array: use Effect called");
+    });
+
+    useEffect(() => {
+      console.log("Empty Dep Arr: use Effect called");
+    },[]);
+
+    useEffect(() => {
+        console.log("fetchData: use Effect called");
         fetchData();
     }, []);
 
